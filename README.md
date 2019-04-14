@@ -14,8 +14,8 @@ Maximum sum subarrays.
 find the maximum sum of subarray given an array of n length.
 
 ## EXPLANATION:
-In this problem, we have been given the number of pages in each book and the range of pages which makes a student like that particular book.  
-Since we need the total number of pages we use the concept of presum, to not calculate again and again, and binary search since the order of books doesn't matter here.  
+In this problem, we have been given an array of n length.  
+Since we need the maximum sum of subarray we use the concept of presum, to not calculate again and again, and store the sum and end index in a map.  
 We sort the list of a number of pages for each book and calculate the presum for the sorted array. Now we apply binary search in order to find the position of li and ri for each student in this sorted list. Binary search can be implemented using bisect in python, and upper and lower bounds in C++. The difference of the indices returned for li and ri searches, will give you the number of books. And the difference of values in the presum array for the corresponding indices will give the total number of pages.
 
 **Note**: The indices are managed accordingly, as the first entry in presume array is 0.

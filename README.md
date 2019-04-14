@@ -8,11 +8,10 @@
 ## DIFFICULTY:
 EASY  
 ## PREREQUISITES:  
-Presum  
-Binary serach.
+Maximum sum subarrays.
 
 ## PROBLEM:
-Find number books whose pages lie in the range of pages given for each student.
+find the maximum sum of subarray given an array of n length.
 
 ## EXPLANATION:
 In this problem, we have been given the number of pages in each book and the range of pages which makes a student like that particular book.  

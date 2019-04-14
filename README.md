@@ -15,13 +15,17 @@ find the maximum sum of subarray given an array of n length.
 
 ## EXPLANATION:
 In this problem, we have been given an array of n length.  
-Since we need the maximum sum of subarray we use the concept of presum, to not calculate again and again, and store the sum and end index in a map.  
-We sort the list of a number of pages for each book and calculate the presum for the sorted array. Now we apply binary search in order to find the position of li and ri for each student in this sorted list. Binary search can be implemented using bisect in python, and upper and lower bounds in C++. The difference of the indices returned for li and ri searches, will give you the number of books. And the difference of values in the presum array for the corresponding indices will give the total number of pages.
+Since we need the maximum sum of subarray we use the concept of presum, to not calculate again and again, and store the sum and index in a map.  
+Now in the map we have sub array sum so we loop through the map and find the negative number which can be removed from the subarray to get maximum sum.
+for example:
+5  
+1 2 3 -2 3 
+
 
 **Note**: The indices are managed accordingly, as the first entry in presume array is 0.
 
 **Part1:** get presum array.  
-**Part2:** binary search to get left and right index, and hence find the number of pages and books accordingly.
+**Part2:** loop through the map and remove negative number.
 
 
 ## AUTHOR'S AND TESTER'S SOLUTIONS:  
